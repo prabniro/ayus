@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .product img {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-lg py-4 fixed top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-xl font-bold">
+                <a href="index.html">
+                    <img src="images/Ayus Logo.png" alt="Ayus Herbal" width="150" height="150">
+                </a>
+            </div>
+            <div>
+                <a href="index.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Home</a>
+                <a href="productlist.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Our Products</a>
+                <a href="about.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">About Us</a>
+                <a href="contact.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow bg-green-100 flex justify-center items-center min-h-screen pt-24">
+        <div class="container mx-auto text-center">
+            <p>Ayus Herbal Care Pvt. Ltd. is a Nepal-based company that specializes in manufacturing natural wellness 
+            and healthcare products. Established in 2013, our head office is located in Saumil Complex, Sinamangal, 
+            Kathmandu – 9, Nepal, while our factory is situated at V.D.C. Vodaha, Bara – 6, Nepal. We take pride in 
+            using only the highest quality ingredients in our products, with a focus on sustainability and organic 
+            practices. Our mission is to provide safe,
+            effective, and affordable natural remedies to promote wellness and improve overall health.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-white shadow-lg py-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <p class="text-gray-600">&copy; 2024 Ayus Herbal Care Pvt. Ltd. All rights reserved.</p>
+            </div>
+            <div class="text-center">
+                <a href="https://www.facebook.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Facebook</a>
+                <a href="https://www.twitter.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Twitter</a>
+                <a href="https://www.instagram.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

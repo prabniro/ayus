@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .product img {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        #map {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-lg py-4 fixed top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-xl font-bold">
+                <a href="index.html">
+                    <img src="images/Ayus Logo.png" alt="Ayus Herbal" width="150" height="150">
+                </a>
+            </div>
+            <div>
+                <a href="index.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Home</a>
+                <a href="productlist.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Our Products</a>
+                <a href="about.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">About Us</a>
+                <a href="contact.html" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow bg-green-100 flex flex-col items-center min-h-screen pt-24">
+        <div class="container mx-auto text-center mb-8">
+            <p>Baburam Acharya Sadak, Sinamangal, Kathmandu, Nepal <br /> 
+                Factory: Jeetpursimara Sub-metropolitan-18, Bara, Nepal</p>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3711098663195!2d85.34252987515991!3d27.694927076558224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190e53b4d4e3%3A0x57bc2de5e3620d8c!2sSaumil%20Complex%2C%20Sinamangal%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1686151470174!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-white shadow-lg py-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <p class="text-gray-600">&copy; 2024 Ayus Herbal Care Pvt. Ltd. All rights reserved.</p>
+            </div>
+            <div class="text-center">
+                <a href="https://www.facebook.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Facebook</a>
+                <a href="https://www.twitter.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Twitter</a>
+                <a href="https://www.instagram.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

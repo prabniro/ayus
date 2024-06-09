@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayus Herbal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-green-100">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-lg py-4 fixed top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-xl font-bold">
+                <img src="images/Ayus Logo.png" alt="Ayus Herbal" width="150" height="150">
+            </div>
+            <div>
+                <a href="#home" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Home</a>
+                <a href="#products" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Our Products</a>
+                <a href="#about" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">About Us</a>
+                <a href="#contact" class="mx-4 text-lg text-gray-700 hover:text-green-700 transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+ <!-- Home Section -->
+<section id="home" class="w-full h-screen flex justify-center items-center bg-cover bg-center relative" style="background-image: url('images/ayuscover.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for better text readability -->
+    <h1 class="text-6xl font-bold welcome-text text-white relative">Welcome to Ayus Herbal</h1>
+</section>
+    <!-- Our Products Section -->
+    <section id="products" class="w-full py-32 px-6"> <!-- Adjusted padding for height -->
+        <div class="container mx-auto text-center">
+
+            <div class="mt-8 fade-in-up">
+                <iframe
+                    src="products.html"
+                    name="targetframe"
+                    allowTransparency="true"
+                    scrolling="no"
+                    frameborder="0"
+                    class="w-full h-[1200px] border-2 border-green-600 rounded-lg"
+                    height=" 500px"
+                ></iframe>
+                <a href="productlist.html" class="bg-green-700 text-white py-3 px-6 rounded-lg shadow-lg text-xl font-bold transition hover:bg-green-600 inline-block mt-4">View Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="w-full py-16 bg-white px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 fade-in-up">About Us</h2>
+            <p class="text-lg text-gray-700 fade-in-up">Ayus Herbal Care Pvt. Ltd. is a Nepal-based company that specializes in
+                manufacturing natural wellness and healthcare products. Established in 2013, our head office is 
+                located in Saumil Complex, Sinamangal, Kathmandu – 9, Nepal, while our factory is situated at V.D.C. 
+                Vodaha, Bara – 6, Nepal. We take pride in using only the highest quality ingredients in our products,
+                with a focus on sustainability and organic practices. Our mission is to provide safe, effective, 
+                and affordable natural remedies to promote wellness and improve overall health. <br />
+                At Ayus Herbal Care Pvt. Ltd., our mission is to create natural wellness and healthcare products 
+                that are safe, effective, and accessible to all. We believe that natural remedies can help promote 
+                overall health and well-being while reducing reliance on synthetic medicines. Our vision is to become 
+                a leading provider of natural wellness products in Nepal and beyond, and to help people live happier, healthier lives.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="w-full py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 fade-in-up">Contact Us</h2>
+            <p class="text-lg text-gray-700 fade-in-up">If you have any questions or need more information, feel free to contact us at:</p>
+            <p class="text-lg text-gray-700 fade-in-up">Email:  Info@ayus.com.np           </p>
+            <p class="text-lg text-gray-700 fade-in-up">Phone: +977-01-4110 860</p>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="w-full py-16 bg-white px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 fade-in-up">Our Location</h2>
+            <p class="text-lg text-gray-700 fade-in-up">Baburam Acharya Sadak, Sinamangal, Kathmandu, Nepal <br/>
+                Factory: Jeetpursimara Sub-metropolitan-18, Bara, Nepal</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-white shadow-lg py-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <p class="text-gray-600">&copy; 2024 Ayus Herbal Care Pvt. Ltd. All rights reserved.</p>
+            </div>
+            <div class="text-center">
+                <a href="https://www.facebook.com/ayusherbalcare" class="mx-2 text-gray-600 hover:text-green-700 transition">Facebook</a>
+                <a href="https://www.linkedin.com/ayusherbal" class="mx-2 text-gray-600 hover:text-green-700 transition">linkedin</a>
+                <a href="https://www.instagram.com/ayus_herbal_care" class="mx-2 text-gray-600 hover:text-green-700 transition">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
