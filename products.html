@@ -10,17 +10,38 @@
             transition: transform 1s ease-in-out;
         }
         .product.show {
-            transform: scale(2.5);
+            transform: scale(1.5); /* Adjusted scale to fit better on smaller screens */
             z-index: 10;
         }
         .product img {
             width: 100%;
             border-radius: 0.5rem;
+            object-fit: cover; /* Ensures the image covers the container without distortion */
         }
         #product-showcase {
             display: flex;
             justify-content: center;
             gap: 1rem;
+            flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+        }
+        .product {
+            flex: 1 1 calc(33.333% - 1rem); /* Responsive flex basis */
+            max-width: calc(33.333% - 1rem);
+        }
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 calc(50% - 1rem); /* Adjust for medium screens */
+                max-width: calc(50% - 1rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                flex: 1 1 100%; /* Full width on small screens */
+                max-width: 100%;
+            }
+            .product.show {
+                transform: scale(1.2); /* Adjusted scale for better fit on small screens */
+            }
         }
     </style>
 </head>
