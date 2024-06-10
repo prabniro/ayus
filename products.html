@@ -6,7 +6,7 @@
     <title>Ayus Herbal Products</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <style>
-        .product {
+         .product {
             transition: transform 1s ease-in-out;
         }
         .product.show {
@@ -28,12 +28,6 @@
             flex: 1 1 calc(33.333% - 1rem); /* Responsive flex basis */
             max-width: calc(33.333% - 1rem);
         }
-        @media (max-width: 768px) {
-            .product {
-                flex: 1 1 calc(50% - 1rem); /* Adjust for medium screens */
-                max-width: calc(50% - 1rem);
-            }
-        }
         @media (min-width: 481px) {
             .product {
                 opacity: 1;
@@ -49,7 +43,7 @@
                 gap: 1rem;
             }
         }
-       @media (max-width: 480px) {
+        @media (max-width: 480px) {
             .product {
                 position: absolute;
                 transition: transform 1s ease-in-out, opacity 1s ease-in-out;
@@ -69,7 +63,7 @@
     <div class="container mx-auto text-center">
         <h1 class="text-4xl font-bold mb-8">Our Herbal Products</h1>
         <div id="product-showcase" class="relative w-full mx-auto">
-            <div class="product bg-white p-6 rounded-lg shadow-lg">
+            <div class="product bg-white p-6 rounded-lg shadow-lg show">
                 <img src="images/liquidcoldbalm.png" alt="Product One">
             </div>
             <div class="product bg-white p-6 rounded-lg shadow-lg">
@@ -101,10 +95,6 @@
         }
 
         setInterval(showNextProduct, 2000);
-
-        window.onload = () => {
-            products[currentProduct].classList.add('show');
-        };
     </script>
 </body>
 </html>
