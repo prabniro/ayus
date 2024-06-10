@@ -91,3 +91,28 @@ nav a {
     width: 100%;
     border-radius: 0.5rem;
 }
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 30px;
+        letter-spacing: 2px;
+        padding: 5px;
+    }
+    
+    nav a {
+        margin: 0 2px;
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding-top: 50px;
+    }
+
+    iframe {
+        height: 200px;
+        min-height: 400px;
+    }
+
+    .product img {
+        width: 100%;
+    }
+}
