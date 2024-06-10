@@ -34,6 +34,21 @@
                 max-width: calc(50% - 1rem);
             }
         }
+        @media (min-width: 481px) {
+            .product {
+                opacity: 1;
+                position: relative;
+                transition: none;
+            }
+            .product.show {
+                transform: scale(1.5);
+            }
+            #product-showcase {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
        @media (max-width: 480px) {
             .product {
                 position: absolute;
