@@ -6,7 +6,7 @@
     <title>Ayus Herbal Products</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <style>
-         .product {
+        .product {
             transition: transform 1s ease-in-out;
         }
         .product.show {
@@ -47,14 +47,16 @@
             .product {
                 position: absolute;
                 transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-                width: 90%; /* Adjust width for mobile view */
+                width: 100%; /* Increased width for mobile view */
+                height: auto;
             }
             .product.show {
-                transform: translateY(0);
+                transform: scale(1.2); /* Scale up slightly for mobile view */
                 opacity: 1;
             }
             .product:not(.show) {
-                transform: translateY(100%);
+                transform: translateY(200%);
+                opacity: 0;
             }
         }
     </style>
