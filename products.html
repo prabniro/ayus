@@ -9,40 +9,38 @@
         .product {
             transition: transform 1s ease-in-out;
         }
-        .product.show {
-            transform: scale(1.5); /* Adjusted scale to fit better on smaller screens */
-            z-index: 10;
-        }
+    
         .product img {
             width: 100%;
             border-radius: 0.5rem;
             object-fit: cover; /* Ensures the image covers the container without distortion */
+            transition: transform 0.3s ease-in-out; /* Transition for the hover effect */
         }
+        
+        .product img:hover {
+            transform: scale(1.3); /* Scale image on hover */
+        }
+
         #product-showcase {
             display: flex;
             justify-content: center;
             gap: 1rem;
             flex-wrap: wrap; /* Ensures items wrap on smaller screens */
         }
+
         .product {
             flex: 1 1 calc(33.333% - 1rem); /* Responsive flex basis */
             max-width: calc(33.333% - 1rem);
         }
+
         @media (min-width: 481px) {
             .product {
                 opacity: 1;
                 position: relative;
                 transition: none;
             }
-            .product.show {
-                transform: scale(1.5);
-            }
-            #product-showcase {
-                display: flex;
-                justify-content: center;
-                gap: 1rem;
-            }
         }
+
         @media (max-width: 480px) {
             .product {
                 position: absolute;
@@ -50,10 +48,7 @@
                 width: 100%; /* Increased width for mobile view */
                 height: auto;
             }
-            .product.show {
-                transform: scale(1.2); /* Scale up slightly for mobile view */
-                opacity: 1;
-            }
+        
             .product:not(.show) {
                 transform: translateY(200%);
                 opacity: 0;
@@ -66,22 +61,34 @@
         <h1 class="text-4xl font-bold mb-8">Our Herbal Products</h1>
         <div id="product-showcase" class="relative w-full mx-auto">
             <div class="product bg-white p-6 rounded-lg shadow-lg show">
-                <img src="images/liquidcoldbalm.png" alt="Product One">
+                <a href="liquidBam.html" target="_blank">
+                    <img src="images/liquidcoldbalm.png" alt="Product One">
+                </a>
             </div>
             <div class="product bg-white p-6 rounded-lg shadow-lg">
-                <img src="images/liquidcoldbalmrollon.png" alt="Product Two">
+                <a href="liquidBamrollon.html" target="_blank">
+                    <img src="images/liquidcoldbalmrollon.png" alt="Product Two">
+                </a>
             </div>
             <div class="product bg-white p-6 rounded-lg shadow-lg">
-                <img src="images/mosquitorepellent.png" alt="Product Three">
+                <a href="mosquitoRepellent.html" target="_blank">
+                    <img src="images/mosquitorepellent.png" alt="Product Three">
+                </a>
             </div>
             <div class="product bg-white p-6 rounded-lg shadow-lg">
-                <img src="images/mosquitorepllentrollon.png" alt="Product Four">
+                <a href="mosquitoRepellentrollon.html" target="_blank">
+                    <img src="images/mosquitorepllentrollon.png" alt="Product Four">
+                </a>
             </div>
             <div class="product bg-white p-6 rounded-lg shadow-lg">
-                <img src="images/painreliefoil.png" alt="Product Five">
+                <a href="PainReliefOil.html" target="_blank">
+                    <img src="images/painreliefoil.png" alt="Product Five">
+                </a>
             </div>
             <div class="product bg-white p-6 rounded-lg shadow-lg">
-                <img src="images/painreliefoilrollon.png" alt="Product Six">
+                <a href="PainReliefOilrollon.html" target="_blank">
+                    <img src="images/painreliefoilrollon.png" alt="Product Six">
+                </a>
             </div>
         </div>
     </div>
